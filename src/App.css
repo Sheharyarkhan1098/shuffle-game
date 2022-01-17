@@ -1,0 +1,44 @@
+.main{
+  background-image: url('../public/game.png');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.withBall{
+  width: 100px;
+  
+}
+
+.withOutBall{
+  width: 100px;
+  height: 130px;
+  margin-top: 30px;
+}
+
+.animateTwo{
+  animation-name: imgTwo;
+  animation-duration: 1s;
+}
+
+.animateOne{
+  animation-name: imgOne;
+  animation-duration: 1s;
+}
+
+@keyframes imgTwo {
+  0% {transform: translateX(0px);}
+  25% {transform: translateX(-120px);}
+  50% {transform: translateX(0px);}
+  75% {transform: translateX(-120px);}
+  100% {transform: translateX(0px);}
+}
+
+@keyframes imgOne {
+  0% {transform: translateX(0px);}
+  25% {transform: translateX(120px);}
+  50% {transform: translateX(0px);}
+  75% {transform: translateX(120px);}
+  100% {transform: translateX(0px);}
+}
